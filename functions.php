@@ -10,7 +10,7 @@ class Groomingfurryangels{
   }
 
   public function enqueue_styles(){
-    wp_enqueue_styles('groomingfurryangels',get_stylesheet_uri());
+    wp_enqueue_style('groomingfurryangels',get_stylesheet_uri());
   }
 
   public static function get_instance(){

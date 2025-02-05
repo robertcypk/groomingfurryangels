@@ -7,5 +7,11 @@
   },
   "scripts": {
     "build": "tailwindcss -i ./style.css -o ./src/output.css"
-  }
+  },
+  "name": "groomingfurryangels",
+  "version": "1.0.0",
+  "description": "a website for grooming pets",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }
