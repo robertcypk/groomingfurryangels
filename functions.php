@@ -2,6 +2,8 @@
 define('THEME_DIR_URI', get_template_directory_uri());
 define('THEME_DIR', get_template_directory());
 
+require_once THEME_DIR.'/vendor/autoload.php';
+
 class Groomingfurryangels{
   private static $instance = null;
 
