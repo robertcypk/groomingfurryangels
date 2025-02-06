@@ -1,5 +1,5 @@
 <?php
-namespace Furry\\;
+namespace Furry;
 
 class Categories{
   public static function current_category(){
