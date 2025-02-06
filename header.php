@@ -12,3 +12,4 @@ error_reporting(E_ALL);
 <?php wp_head(); ?>
 </head>
   <body <?php body_class(); ?>>
+    <div>Menu</div>
