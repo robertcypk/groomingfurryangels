@@ -11,8 +11,17 @@ class Groomingfurryangels{
     add_action("wp_enqueue_scripts",[$this,'enqueue_styles']);
   }
 
+  private function getpathscript($path){
+    if(wp_get_environment_type()=='production'){
+      return get_stylesheet_directory_uri().'/'.$path;
+    }
+    return add_query_arg('time',time(),get_stylesheet_directory_uri().'/'.$path);
+  }
+
   public function enqueue_styles(){
-    wp_enqueue_style('groomingfurryangels',get_stylesheet_uri());
+    $theme = wp_get_theme();
+
+    wp_enqueue_style('groomingfurryangels',getpathscript('css/output.css'),array(),$theme->get('Version'));
   }
 
   public static function get_instance(){
