@@ -21,7 +21,7 @@ class Groomingfurryangels{
   public function enqueue_styles(){
     $theme = wp_get_theme();
 
-    wp_enqueue_style('groomingfurryangels',getpathscript('css/output.css'),array(),$theme->get('Version'));
+    wp_enqueue_style('groomingfurryangels',$this->getpathscript('css/output.css'),array(),$theme->get('Version'));
   }
 
   public static function get_instance(){
