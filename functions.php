@@ -24,7 +24,7 @@ class Groomingfurryangels{
   }
 
   public function filter_a_nav($atts,$item, $args){
-    print_r($atts)
+    print_r($atts);
     if(isset($args->add_a_class)){
       $atts['class'] = $args->add_a_class;
     }
