@@ -11,7 +11,7 @@ class Groomingfurryangels{
     add_action("wp_enqueue_scripts",[$this,'enqueue_styles']);
     add_theme_support("title-tag");
     register_nav_menus(array(
-      'primary' =>__('Primery Menu', 'groomingfurryangels'),
+      'primary' =>__('Primary Menu', 'groomingfurryangels'),
       'footer' =>__('Footer Menu','groomingfurryangels')
     ));
     add_theme_support('custom_logo');
@@ -20,6 +20,14 @@ class Groomingfurryangels{
     add_theme_support('wp-block-styles');
     add_theme_support('responsive-embeds');
     add_theme_support('editor-styles');
+    add_filter('nav_menu_link_attributes','filter_a_nav',1,3);
+  }
+
+  public function filter_a_nav($atts,$item, $args){
+    if(isset($args->add_a_class)){
+      $atts['class'] = $args->add_a_class;
+    }
+    return $atts;
   }
 
   private function getpathscript($path){

@@ -26,7 +26,6 @@
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
         </svg>
     </button>
-    <!-- <div class="hidden w-full md:block md:w-auto" id="navbar-default"> -->
     <?php 
 wp_nav_menu(array(
   'container_id' => 'navbar-default',
