@@ -11,7 +11,7 @@ class Groomingfurryangels{
     add_action("wp_enqueue_scripts",[$this,'enqueue_styles']);
     add_theme_support("title-tag");
     register_nav_menu(array(
-      'primary' => __('Primery Menu', 'groomingfurryangels')
+      'primary' =>__('Primery Menu', 'groomingfurryangels'),
     ));
     add_theme_support('custom_logo');
     add_theme_support('post-thumbnails');
