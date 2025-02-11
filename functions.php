@@ -21,7 +21,7 @@ class Groomingfurryangels{
     add_theme_support('responsive-embeds');
     add_theme_support('editor-styles');
     add_filter('wp_nav_menu',[$this,'filter_a_nav'],10,4);
-    add_action('the_custom_logo',[$this,'website_logo'],1,4);
+    add_filter('the_custom_logo',[$this,'website_logo'],1,4);
   }
 
   public function filter_a_nav($attrs,$args){
@@ -32,7 +32,7 @@ class Groomingfurryangels{
   }
 
   public function website_logo(){
-    $image = wp_get_attachment_image_src(get_theme_mod('custom_logo'),'full');
+    $image = wp_get_attachment_image_src(get_theme_mod('custom_logo',21),'full');
     return esc_url($image[1]);
   }
 
