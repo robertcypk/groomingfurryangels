@@ -25,7 +25,7 @@ class Groomingfurryangels{
   }
 
   public function filter_a_nav($attrs){
-    print_r($attrs)
+    print_r($attrs);
     /*if(isset($args->add_a_class)){
       $atts['link_class'] = $args->add_a_class;
     }*/
