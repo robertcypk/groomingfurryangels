@@ -25,11 +25,8 @@ class Groomingfurryangels{
   }
 
   public function filter_a_nav($attrs,$menu_item, $args, $depth){ 
-    //if(isset($args->add_a_class)){
-    if(in_array('menu-item-has-children',$attrs)){
-      $attrs[] = 'has-child';
-    }
-    //}
+    print_r($args);
+    $attrs[] = '';
     return $attrs;
   }
 
