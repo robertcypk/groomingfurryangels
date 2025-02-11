@@ -1,7 +1,8 @@
 <?php
-wp_header();
+get_header();
 ?>
+<?php echo Furry\Categories::current_category(); ?>
 <?php echo the_content(); ?>
 <?php
-wp_footer();
+get_footer();
 ?>
