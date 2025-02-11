@@ -20,7 +20,7 @@ class Groomingfurryangels{
     add_theme_support('wp-block-styles');
     add_theme_support('responsive-embeds');
     add_theme_support('editor-styles');
-    add_filter('wp_nav_menu',[$this,'filter_a_nav'],5,8);
+    add_filter('wp_nav_menu',[$this,'filter_a_nav'],5,2);
     add_action('the_custom_logo',[$this,'website_logo'],10,4);
   }
 
@@ -29,7 +29,7 @@ class Groomingfurryangels{
     /*if(isset($args->add_a_class)){
       $attrs['link_class'] = $args->add_a_class;
     }*/
-    return '';
+    return $args;
   }
 
   public function website_logo($atts,$item,$args,$depth){
