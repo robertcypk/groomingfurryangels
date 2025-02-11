@@ -11,9 +11,10 @@
 
 <nav class="bg-white border-gray-200 dark:bg-gray-900">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-  
+
+  <?php if(function_exists('the_custom_logo')){}else{ die(); } ?>
 <?php if( has_custom_logo() ){ ?>
-<?php echo the_custom_logo(); ?>
+<?php  echo the_custom_logo(); ?>
 <?php }else{ ?>
   <a href="<?php get_bloginfo('url'); ?>" class="flex items-center space-x-3 rtl:space-x-reverse">
         <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
