@@ -861,6 +861,9 @@
     }
   }
 }
+@import base;
+@import components;
+@import utilities;
 @layer base {
   .tooltip-arrow,.tooltip-arrow:before {
     position: absolute;
