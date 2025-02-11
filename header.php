@@ -35,7 +35,7 @@ wp_nav_menu(array(
   'theme_location' => 'primary',
   'li_class' => '',
   'fallback_cb' => false,
-  'filter_a_nav' => 'block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500'
+  'filter_a_nav_class' => 'block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500'
 ));
 ?>
       <!--

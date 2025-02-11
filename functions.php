@@ -25,8 +25,7 @@ class Groomingfurryangels{
   }
 
   public function filter_a_nav($attrs,$menu_item, $args, $depth){ 
-    print_r($args);
-    $attrs[] = '';
+    $attrs[] = $args->filter_a_nav_class;
     return $attrs;
   }
 
