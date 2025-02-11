@@ -24,7 +24,7 @@ class Groomingfurryangels{
     add_action('the_custom_logo',[$this,'website_logo']);
   }
 
-  public function filter_a_nav($atts,$item, $args,$depth){
+  public function filter_a_nav($atts,$item,$args,$depth){
     if(isset($args->add_a_class)){
       $atts['link_class'] = $args->add_a_class;
     }
