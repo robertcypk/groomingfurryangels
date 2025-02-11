@@ -20,14 +20,16 @@ class Groomingfurryangels{
     add_theme_support('wp-block-styles');
     add_theme_support('responsive-embeds');
     add_theme_support('editor-styles');
-    add_filter('nav_menu_item_args',[$this,'filter_a_nav'],10,4);
+    add_filter('nav_menu_css_class',[$this,'filter_a_nav'],10,4);
     add_action('the_custom_logo',[$this,'website_logo'],1,4);
   }
 
-  public function filter_a_nav($attrs,$args){
-    if(isset($args->add_a_class)){
-      $attrs['link_class'] = $args->add_a_class;
+  public function filter_a_nav($attrs,$menu_item, $args, $depth){ 
+    //if(isset($args->add_a_class)){
+    if(in_array('menu-item-has-children',$attrs)){
+      $attrs[] = 'has-child';
     }
+    //}
     return $attrs;
   }
 
