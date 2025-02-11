@@ -20,7 +20,7 @@ class Groomingfurryangels{
     add_theme_support('wp-block-styles');
     add_theme_support('responsive-embeds');
     add_theme_support('editor-styles');
-    add_filter('nav_menu_link_attributes','filter_a_nav',1,3);
+    add_filter('nav_menu_link_attributes',[$this,'filter_a_nav'],1,3);
   }
 
   public function filter_a_nav($atts,$item, $args){
