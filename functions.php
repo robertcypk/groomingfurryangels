@@ -24,11 +24,12 @@ class Groomingfurryangels{
     add_action('the_custom_logo',[$this,'website_logo'],10,1);
   }
 
-  public function filter_a_nav($atts,$args){
-    if(isset($args->add_a_class)){
+  public function filter_a_nav($attrs){
+    print_r($attrs)
+    /*if(isset($args->add_a_class)){
       $atts['link_class'] = $args->add_a_class;
-    }
-    return $atts;
+    }*/
+    return '';
   }
 
   public function website_logo($atts,$item,$args,$depth){
