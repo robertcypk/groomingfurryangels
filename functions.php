@@ -26,10 +26,10 @@ class Groomingfurryangels{
 
   public function filter_a_nav($attrs,$args){
     print_r($attrs);
-    /*if(isset($args->add_a_class)){
+    if(isset($args->add_a_class)){
       $attrs['link_class'] = $args->add_a_class;
-    }*/
-    return $args;
+    }
+    return $attrs;
   }
 
   public function website_logo($atts,$item,$args,$depth){
