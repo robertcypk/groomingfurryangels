@@ -14,7 +14,7 @@ class Groomingfurryangels{
       'primary' =>__('Primary Menu', 'groomingfurryangels'),
       'footer' =>__('Footer Menu','groomingfurryangels')
     ));
-    add_theme_support('custom_logo');
+    add_theme_support('custom-logo');
     add_theme_support('post-thumbnails');
     add_theme_support('align-wide');
     add_theme_support('wp-block-styles');
