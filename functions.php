@@ -24,14 +24,14 @@ class Groomingfurryangels{
     add_action('the_custom_logo',[$this,'website_logo']);
   }
 
-  public function filter_a_nav($atts,$item, $args){
+  public function filter_a_nav($atts,$item, $args,$depth){
     if(isset($args->add_a_class)){
       $atts['link_class'] = $args->add_a_class;
     }
     return $atts;
   }
 
-  public function website_logo($atts,$item,$args){
+  public function website_logo($atts,$item,$args,$depth){
     $image = wp_get_attachment_image_src(get_theme_mod('custom_logo'),'full');
     return esc_url($image[1]);
   }
