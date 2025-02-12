@@ -9,7 +9,7 @@
   <body <?php body_class(); ?>>
 
 
-<nav class="bg-white border-gray-200 dark:bg-gray-900">
+<nav class="bg-white">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 
 <?php if( has_custom_logo() ){ ?>
