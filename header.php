@@ -13,8 +13,8 @@
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 
 <?php if( has_custom_logo() ){ ?>
-<a href="<?php get_bloginfo('url'); ?>" class="flex items-center space-x-3 rtl:space-x-reverse">
-   <''img src="<?php echo get_custom_logo(); ?>" class="h-8" alt="<?php wp_title(); ?>" />
+<a href="<?php echo get_bloginfo('url'); ?>" class="flex items-center space-x-3 rtl:space-x-reverse">
+   <img src="<?php echo get_custom_logo(); ?>" class="h-8" alt="<?php wp_title(); ?>" />
 </a>
 <?php }else{ ?>
   <a href="<?php get_bloginfo('url'); ?>" class="flex items-center space-x-3 rtl:space-x-reverse">
