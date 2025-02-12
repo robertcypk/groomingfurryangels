@@ -9,12 +9,14 @@
     "@tailwindcss/cli": "^4.0.3"
   },
   "scripts": {
-    "build": "tailwindcss -i ./style.css -o ./css/output.css"
+    "build": "tailwindcss -i ./style.css -o ./css/output.css",
+    "config": "tailwindcss-cli@latest init"
   },
   "name": "groomingfurryangels",
   "version": "1.0.0",
   "description": "a website for grooming pets",
-  "main": "index.js",
+  "main": "./js/app.js",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "type": "module"
 }
