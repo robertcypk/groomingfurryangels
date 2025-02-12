@@ -32,7 +32,7 @@ class Groomingfurryangels{
   public function website_logo(){
     $image = wp_get_attachment_image_src(get_theme_mod('custom_logo',21),'full');
     print_r($image);
-    return esc_url($image[1]).'<!-- hook log --->';
+    return esc_url($image[0]).'<!-- hook log --->';
   }
 
   private function getpathscript($path){
