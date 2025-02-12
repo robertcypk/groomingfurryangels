@@ -21,7 +21,7 @@ class Groomingfurryangels{
     add_theme_support('responsive-embeds');
     add_theme_support('editor-styles');
     add_filter('nav_menu_link_attributes',[$this,'filter_a_nav'],10,4);
-    add_action('the_custom_logo',[$this,'website_logo'],100);
+    add_action('get_custom_logo',[$this,'website_logo'],100);
   }
 
   public function filter_a_nav($attrs,$menu_item, $args, $depth){ 
