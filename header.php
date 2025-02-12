@@ -14,7 +14,7 @@
 
 <?php if( has_custom_logo() ){ ?>
 <a href="<?php echo get_bloginfo('url'); ?>" class="flex max-w-sm items-center space-x-3 rtl:space-x-reverse">
-   <img src="<?php echo get_custom_logo(); ?>" class="h-8 max-w-xs" alt="<?php wp_title(); ?>" />
+   <img src="<?php echo get_custom_logo(); ?>" class="h-8 max-w-xs" width="250" alt="<?php wp_title(); ?>" />
 </a>
 <?php }else{ ?>
   <a href="<?php get_bloginfo('url'); ?>" class="flex items-center space-x-3 rtl:space-x-reverse">
