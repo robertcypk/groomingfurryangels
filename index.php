@@ -1,3 +1,7 @@
 <?php get_header(); ?>
-<div>GroomingFurryAngel</div>
-<?php get_footer();?>
+<div>
+  <!--  CONTENT -->
+  <?php echo the_content(); ?>
+  <!-- -->
+</div>
+<?php get_footer(); ?>

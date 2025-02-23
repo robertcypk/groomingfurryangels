@@ -6,9 +6,10 @@
  Text Domain: grooming
  */
 @import "tailwindcss";
-@import "tailwindcss/base";
+/*
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+*/
 @import "flowbite/src/themes/default";
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
